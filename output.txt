@@ -1,0 +1,22 @@
+Done loading input file; relevant table is between lines 24 and 43.
+Done creating URLPATHs for most of those 15 games.
+
+0 12/26/2022 fist-forged-in-shadow-torch ALREADY DOWNLOADED 'pc' = skip.
+  1 12/25/2022 death-stranding ALREADY DOWNLOADED 'pc' = skip.
+  2 12/22/2022 fallout ALREADY DOWNLOADED 'pc' = skip.
+  3 12/10/2022 False IGNORE THIS TITLE 'PUBG Founder's Pack', IS PROBABLY NOT ON METACRITIC.
+  4 12/10/2022 playerunknowns-battlegrounds ALREADY DOWNLOADED 'pc' = skip.
+  5  3/11/2022 cities-skylines ALREADY DOWNLOADED 'pc' = skip.
+  6 12/30/2021 rise-of-the-tomb-raider-20-year-celebration ALREADY DOWNLOADED 'pc' = skip.
+  7 12/23/2020 tropico-5 ALREADY DOWNLOADED 'pc' = skip.
+  8 12/10/2020 tyranny ALREADY DOWNLOADED 'pc' = skip.
+  9 12/10/2020 pillars-of-eternity ALREADY DOWNLOADED 'pc' = skip.
+ 10   6/4/2020 overcooked ALREADY DOWNLOADED 'pc' = skip.
+ 11  5/29/2020 borderlands-the-handsome-collection ALREADY DOWNLOADED 'pc' = skip.
+ 12  5/21/2020 sid-meiers-civilization-vi ALREADY DOWNLOADED 'pc' = skip.
+ 13  5/19/2020 grand-theft-auto-v ALREADY DOWNLOADED 'pc' = skip.
+ 14   1/1/1970 deliberately-wrong pc=failed with 404, trying next: playstation-4=failed with 404, trying next: switch=failed with 404, trying next: all=FAILED.
+
+READY. 1 failed downloads.
+
+['404 = deliberately-wrong = Deliberately Wrong']
