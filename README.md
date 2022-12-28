@@ -9,3 +9,8 @@ Lookup (e.g. metacritic-) ratings for all (most of) my epicgames licenses.
 1. Use your own `PurchaseHistory_plaintext.txt` file.
 1. Extend the exceptions in `settings.py` if needed, possibly submit a pull-request to this repo.
 
+# external packages
+
+    pip3 install -r .\requirements.txt
+
+    
