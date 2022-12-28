@@ -1,3 +1,14 @@
+# my own .gitignore additions:
+
+metacritic
+todo-failing.txt
+*copy.ipynb
+EpicGames - Shortcut.lnk
+PurchaseHistory_plaintext_20221226.txt
+
+
+# Github .gitignore template 'python':
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
