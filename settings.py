@@ -71,6 +71,9 @@ NAMES_MAPPER = {"Encased": "encased-a-sci-fi-post-apocalyptic-rpg",
                 'Alba - A Wildlife Adventure' : 'alba-a-wildlife-adventure',
                 'A Game Of Thrones: The Board Game Digital Edit...' : 'a-game-of-thrones-the-board-game---digital-edition',
                 'Total War: WARHAMMER - Grombrindal The White D...' : 'total-war-warhammer---grombrindal-the-white-dwarf',
+                'Borderlands: The Handsome Collection' : 'borderlands-2',
+                'Rise of the Tomb Raider: 20 Year Celebration' : 'rise-of-the-tomb-raider',
+                'Overcooked' : 'overcooked!'
                 }
 
 # these are not on metacritic (yet)
@@ -102,3 +105,7 @@ TIMEOUT = 5
 
 # store all HTML pages locally
 downloadsFolder = "metacritic"
+
+# in which order you want the resulting CSV:
+COLUMN_ORDER=['game', 'metascore', 'metascoreBased', 'userscore', 'userscoreBased',
+                'nops', 'released', 'platform', 'developer', 'publisher', 'genres']
