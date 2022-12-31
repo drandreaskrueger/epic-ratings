@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 ######################################################
-# filesparser.py  
+#  filesparser.py  
 #
 #   since 31/12/2022
 #     v02 31/12/2022
@@ -15,8 +15,8 @@
 import os, datetime, csv
 from pprint import pprint
 from bs4 import BeautifulSoup # pip3 install html5lib bs4 
-
 from settings import downloadsFolder, platformsOrdered, COLUMN_ORDER
+
 
 def myfiles(downloadsFolder, platformsOrdered):
     """
