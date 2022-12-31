@@ -16,6 +16,12 @@ Lookup (e.g. metacritic-) ratings for all (most of) my epicgames licenses.
 
 # external packages
 
-    pip3 install -r .\requirements.txt
+    pip3 install -r requirements.txt
 
 but better do all this in a [venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv), to keep your host system unaffected.
+
+# example result
+
+![metacritic/example-table.png](metacritic/example-table.png)
+
+Running 'quickstart' with the included `PurchaseHistory_plaintext.txt` example, the resulting CSV file can be sorted and formatted like this, e.g. with the free and opensource [LibreOffice Calc](https://www.libreoffice.org/discover/calc/). 
