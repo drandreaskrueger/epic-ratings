@@ -18,4 +18,4 @@ Lookup (e.g. metacritic-) ratings for all (most of) my epicgames licenses.
 
     pip3 install -r .\requirements.txt
 
-    
+but better do all this in a [venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv), to keep your host system unaffected.
