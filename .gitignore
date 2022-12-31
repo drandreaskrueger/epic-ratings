@@ -1,6 +1,7 @@
 # my own .gitignore additions:
 
 metacritic
+metacritic_
 todo-failing.txt
 *copy.ipynb
 EpicGames - Shortcut.lnk
