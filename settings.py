@@ -3,6 +3,9 @@
 ##############################################
 # settings.py
 # 
+#   since 28/12/2022
+#     v03 03/01/2023
+#
 #   if your 'failedDownloads' is not empty, 
 #     you might want to add something here?
 ##############################################
@@ -102,6 +105,13 @@ headers = {
 
 # don't wait longer than this (raise the number if you have a bad internet connection)
 TIMEOUT = 5
+
+# Wait 1 second after each pagedownload. We don't want to harm metacritic.
+# (Actually - why? Normally I use multi-threading for concurrent downloads,
+#  to speed up (especially often repeated) query times. But here, there is
+#  a good reason why no rush: Downloads are needed only once, and even with
+#  150 games that means just three minutes of your life.  Once. Patience!)
+NICENESS = 1.0 # in seconds. 
 
 # store all HTML pages locally
 downloadsFolder = "metacritic"

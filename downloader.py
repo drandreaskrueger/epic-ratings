@@ -4,15 +4,17 @@
 # downloader.py  
 #
 #   since 28/12/2022
-#     v02 28/12/2022
+#     v03 03/01/2023
 # 
 #   takes your PurchaseHistory_plaintext.txt,
 #    creates metacritic URLs from game names,
 #         and then downloads all those pages. 
 ##############################################
 
-import csv
+import sys
 import os
+import time
+import csv
 from pprint import pprint
 import requests # pip3 install requests
 from settings import * # do read that file, to adapt to your needs
@@ -96,7 +98,7 @@ def makeFolderUnlessExists(foldername):
         os.mkdir(foldername)
 
 
-def DownloadPages(toDownload, printInfos=True):
+def DownloadPages(toDownload, printInfos=True, nice=NICENESS):
     """
         get all the pages:
         * make subfolder
@@ -146,9 +148,14 @@ def DownloadPages(toDownload, printInfos=True):
             else:
                 if page.status_code==200:
                     printInfo ("succeeded, break.", end = " ")
+                    print("..", end=""); sys.stdout.flush()
+                    time.sleep(NICENESS)
+                    print(".", end=" ")
                     break
                 else:
                     printInfo("=failed with %s, trying next:" % page.status_code, end=" ")
+
+
 
         # printInfo(page)
         if page == None:
