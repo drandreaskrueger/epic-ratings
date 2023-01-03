@@ -7,6 +7,8 @@ Lookup (e.g. metacritic-) ratings for all (most of) my epicgames licenses.
     python3 filesparser.py
     open metacritic/MyEpicGamesOnMetacritic-*.csv
 
+N.B.: see [external packages](#external-packages) below
+
 1. Run with the included example file, to see what it does.
 1. Read the `settings.py` to understand how the tweaking works.
 
