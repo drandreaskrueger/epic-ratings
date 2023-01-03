@@ -27,3 +27,6 @@ but better do all this in a [venv](https://packaging.python.org/en/latest/guides
 ![output/metacritic-example-table.png](output/metacritic-example-table.png)
 
 Running 'quickstart' with the included `PurchaseHistory_plaintext.txt` example, the resulting CSV file can be sorted and formatted like ^ this, e.g. with the [example file](output/MyEpicGamesOnMetacritic.ods) and the free and opensource [LibreOffice Calc](https://www.libreoffice.org/discover/calc/). 
+
+# Thank you very much, ...
+... *metacritic*. You are an amazing website (I have actually begun using you like IMDb for all my movie ratings). Please see this "[niceness](https://github.com/drandreaskrueger/epic-ratings/blob/e18431b3446f723b48d08e48c3d1ce0f52129ce5/settings.py#L109-L114)" idea to keep the drain on your server resources minimal. Is `1.0 seconds delay` good enough?
