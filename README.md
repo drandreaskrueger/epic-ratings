@@ -22,6 +22,6 @@ but better do all this in a [venv](https://packaging.python.org/en/latest/guides
 
 # example result
 
-![metacritic-example-table.png](metacritic-example-table.png)
+![output/metacritic-example-table.png](output/metacritic-example-table.png)
 
-Running 'quickstart' with the included `PurchaseHistory_plaintext.txt` example, the resulting CSV file can be sorted and formatted like this, e.g. with the free and opensource [LibreOffice Calc](https://www.libreoffice.org/discover/calc/). 
+Running 'quickstart' with the included `PurchaseHistory_plaintext.txt` example, the resulting CSV file can be sorted and formatted like ^ this, e.g. with the [example file](output/MyEpicGamesOnMetacritic.ods) and the free and opensource [LibreOffice Calc](https://www.libreoffice.org/discover/calc/). 
