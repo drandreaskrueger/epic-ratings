@@ -1,5 +1,7 @@
 # epic-ratings
-Lookup (e.g. metacritic-) ratings for all (most of) my epicgames licenses. 
+Lookup (e.g. metacritic-) ratings for all (most of) my **epicgames licenses**. 
+
+*(Thank you so much, Epicgames, for all the freebies, but less is more - and this is my attempt to sort the mess in my library)*
 
 # quickstart
 
