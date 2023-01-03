@@ -1,22 +1,44 @@
+(.venv)> python .\downloader.py
+
 Done loading input file; relevant table is between lines 24 and 43.
 Done creating URLPATHs for most of those 15 games.
-
-0 12/26/2022 fist-forged-in-shadow-torch ALREADY DOWNLOADED 'pc' = skip.
-  1 12/25/2022 death-stranding ALREADY DOWNLOADED 'pc' = skip.
-  2 12/22/2022 fallout ALREADY DOWNLOADED 'pc' = skip.
+  0 12/26/2022 fist-forged-in-shadow-torch pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  1 12/25/2022 death-stranding pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  2 12/22/2022 fallout pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
   3 12/10/2022 False IGNORE THIS TITLE 'PUBG Founder's Pack', IS PROBABLY NOT ON METACRITIC.
-  4 12/10/2022 playerunknowns-battlegrounds ALREADY DOWNLOADED 'pc' = skip.
-  5  3/11/2022 cities-skylines ALREADY DOWNLOADED 'pc' = skip.
-  6 12/30/2021 rise-of-the-tomb-raider-20-year-celebration ALREADY DOWNLOADED 'pc' = skip.
-  7 12/23/2020 tropico-5 ALREADY DOWNLOADED 'pc' = skip.
-  8 12/10/2020 tyranny ALREADY DOWNLOADED 'pc' = skip.
-  9 12/10/2020 pillars-of-eternity ALREADY DOWNLOADED 'pc' = skip.
- 10   6/4/2020 overcooked ALREADY DOWNLOADED 'pc' = skip.
- 11  5/29/2020 borderlands-the-handsome-collection ALREADY DOWNLOADED 'pc' = skip.
- 12  5/21/2020 sid-meiers-civilization-vi ALREADY DOWNLOADED 'pc' = skip.
- 13  5/19/2020 grand-theft-auto-v ALREADY DOWNLOADED 'pc' = skip.
- 14   1/1/1970 deliberately-wrong pc=failed with 404, trying next: playstation-4=failed with 404, trying next: switch=failed with 404, trying next: all=FAILED.
+  4 12/10/2022 playerunknowns-battlegrounds pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  5  3/11/2022 cities-skylines pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  6 12/30/2021 rise-of-the-tomb-raider pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  7 12/23/2020 tropico-5 pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  8 12/10/2020 tyranny pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+  9 12/10/2020 pillars-of-eternity pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+ 10   6/4/2020 overcooked! pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+ 11  5/29/2020 borderlands-2 pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+ 12  5/21/2020 sid-meiers-civilization-vi pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+ 13  5/19/2020 grand-theft-auto-v pcsucceeded, break. ... SUCCEEDED, PAGE SAVED.
+ 14   1/1/1970 deliberately-wrong pc=failed with 404, trying next: playstation-4=failed with 404, trying next: switch=failed with 404, trying next: all=FAILED. 
 
 READY. 1 failed downloads.
-
 ['404 = deliberately-wrong = Deliberately Wrong']
+
+
+(.venv)> .\filesparser.py
+0 pc borderlands-2: ms=89 (38 revs); us=8.2 (3571 revs); released=Sep 17, 2012; Dev=Gearbox Software; Publ=2K Games; Genres=Action,Shooter,Shooter,First-Person,Sci-Fi,Sci-Fi,Arcade; #plyrs=Up to 4
+1 pc cities-skylines: ms=85 (60 revs); us=8.7 (2045 revs); released=Mar 10, 2015; Dev=Colossal Order; Publ=Paradox Interactive; Genres=CityBuilding,Modern,Strategy,Management,Government; #plyrs=No Online Multiplayer
+2 pc death-stranding: ms=86 (54 revs); us=7.8 (2166 revs); released=Jul 14, 2020; Dev=Kojima Productions; Publ=505 Games; Genres=Action,ActionAdventure,General,Open-World; #plyrs=No Online Multiplayer
+3 pc fallout: ms=89 (12 revs); us=8.8 (1428 revs); released=Oct  9, 1997; Dev=Black Isle Studios; Publ=Interplay; Genres=Role-Playing,First-Person,First-Person,PC-styleRPG,PC-styleRPG,Western-Style; #plyrs=No Online Multiplayer
+4 pc fist-forged-in-shadow-torch: ms=81 (6 revs); us=7.2 (35 revs); released=Oct  3, 2021; Dev=TIGAMES; Publ=bilibili; Genres=Action,ActionAdventure,Platformer,Open-World,Metroidvania; #plyrs=No Online Multiplayer
+5 pc grand-theft-auto-v: ms=96 (57 revs); us=7.8 (8677 revs); released=Apr 13, 2015; Dev=Rockstar North; Publ=Rockstar Games; Genres=Modern,ActionAdventure,Open-World; #plyrs=Up to 32
+6 pc overcooked!: ms=81 (15 revs); us=7.8 (131 revs); released=Aug  3, 2016; Dev=Ghost Town Games Ltd.; Publ=Team17,Ghost Town Games Ltd.; Genres=Action,Simulation,Arcade,Virtual,Career; #plyrs=
+7 pc pillars-of-eternity: ms=89 (71 revs); us=8.3 (2629 revs); released=Mar 26, 2015; Dev=Obsidian Entertainment; Publ=Paradox Interactive; Genres=PC-styleRPG,Third-Person,PC-styleRPG,Role-Playing,Western-Style; #plyrs=No Online Multiplayer
+8 pc playerunknowns-battlegrounds: ms=86 (46 revs); us=4.7 (1962 revs); released=Dec 20, 2017; Dev=Bluehole, Inc., PUBG Corporation; Publ=Bluehole, Inc.; Genres=Action,Shooter,First-Person,Tactical; #plyrs=Up to more than 64
+9 pc rise-of-the-tomb-raider: ms=86 (45 revs); us=8.0 (1980 revs); released=Jan 28, 2016; Dev=Crystal Dynamics, Nixxes Software; Publ=Square Enix; Genres=ActionAdventure,General,Linear; #plyrs=No Online Multiplayer
+10 pc sid-meiers-civilization-vi: ms=88 (84 revs); us=7.0 (1546 revs); released=Oct 20, 2016; Dev=Firaxis Games; Publ=2K Games; Genres=Strategy,Turn-Based,4X; #plyrs=Online Multiplayer
+11 pc tropico-5: ms=75 (51 revs); us=6.9 (419 revs); released=May 23, 2014; Dev=Haemimont, Haemimont Games; Publ=Kalypso; Genres=Tycoon,Strategy,Management,Tycoon,Government,Business/Tycoon; #plyrs=
+12 pc tyranny: ms=80 (67 revs); us=7.8 (652 revs); released=Nov 10, 2016; Dev=Obsidian Entertainment; Publ=Paradox Interactive; Genres=Role-Playing,Western-Style; #plyrs=No Online Multiplayer
+
+READY.
+#genres=28:
+['4X', 'Action', 'ActionAdventure', 'Arcade', 'Business/Tycoon', 'Career', 'CityBuilding', 'First-Person', 'General', 'Government', 'Linear', 'Management', 'Metroidvania', 'Modern', 'Open-World', 'PC-styleRPG', 'Platformer', 'Role-Playing', 'Sci-Fi', 'Shooter', 'Simulation', 'Strategy', 'Tactical', 'Third-Person', 'Turn-Based', 'Tycoon', 'Virtual', 'Western-Style']
+saved to: metacritic\MyEpicGamesOnMetacritic-20230103-224044.csv
+saved to: metacritic\MyEpicGamesOnMetacritic-20230103-224044_genres.txt
