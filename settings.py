@@ -50,7 +50,10 @@ REMOVE_SENTENCES=[
                     ": Trials of Fear Edition",
                     " - Gold Edition",
                     " - Definitive Edition",
+                    ": Definitive Edition",
                     " and 1 more",
+                    ': 20 Year Celebration',
+                    ' GAME OF THE YEAR EDITION',
                     ]
 
 # these could not be automatically transformed, so provide the URL path manually:
@@ -76,7 +79,16 @@ NAMES_MAPPER = {"Encased": "encased-a-sci-fi-post-apocalyptic-rpg",
                 'Total War: WARHAMMER - Grombrindal The White D...' : 'total-war-warhammer---grombrindal-the-white-dwarf',
                 'Borderlands: The Handsome Collection' : 'borderlands-2',
                 'Rise of the Tomb Raider: 20 Year Celebration' : 'rise-of-the-tomb-raider',
-                'Overcooked' : 'overcooked!'
+                'Overcooked' : 'overcooked!',
+                'Jotun: Valhalla Edition' : 'jotun',
+                'Fallout 3: Game of the Year Edition' : 'fallout-3',
+                'XCOM® 2' : 'xcom-2',
+                'Warhammer 40,000: Mechanicus - Standard Editio...' : 'warhammer-40000-mechanicus',
+                'STAR WARS™: Squadrons' : 'star-wars-squadrons',
+                'STAR WARS™ Battlefront™ II: Celebration Editio...' : 'star-wars-battlefront-ii',
+                'Rocket League®' : 'rocket-league',
+                'Redout: Enhanced Edition' : 'redout-2016',
+
                 }
 
 # these are not on metacritic (yet)
