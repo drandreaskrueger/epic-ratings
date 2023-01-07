@@ -24,6 +24,7 @@ def myfiles(downloadsFolder, platformsOrdered):
     """
     filenames = sorted([name for name in os.listdir(downloadsFolder) 
                         if name.split("_")[0] in platformsOrdered])
+    print ("Found %d files in folder '%s'." % (len(filenames), downloadsFolder))
     return filenames
 
 
