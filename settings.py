@@ -129,5 +129,10 @@ NICENESS = 1.0 # in seconds.
 downloadsFolder = "metacritic"
 
 # in which order you want the resulting CSV:
-COLUMN_ORDER=['game', 'metascore', 'metascoreBased', 'userscore', 'userscoreBased',
-                'nops', 'released', 'platform', 'developer', 'publisher', 'genres']
+COLUMN_ORDER=['game', '', 'metascore', 'metascoreBased', '',
+              'userscore', 'userscoreBased', '',
+              'nops', 'released', 'platform', '',
+              'developer', 'publisher', '',
+              'genres']
+
+EMPTY_COLUMNS = True # only cosmetic, to cluster column topics

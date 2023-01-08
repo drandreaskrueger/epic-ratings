@@ -15,7 +15,8 @@
 import os, datetime, csv
 from pprint import pprint
 from bs4 import BeautifulSoup # pip3 install html5lib bs4 
-from settings import downloadsFolder, platformsOrdered, COLUMN_ORDER
+from settings import downloadsFolder, platformsOrdered 
+from settings import COLUMN_ORDER, EMPTY_COLUMNS
 
 
 def myfiles(downloadsFolder, platformsOrdered):
@@ -166,11 +167,16 @@ def saveResults(filename2results, filename="MyEpicGamesOnMetacritic-%s.csv",
     """
     timestamp=datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     fn=os.path.join(folder, filename % timestamp)
+    
+    columns = columnOrder
+    if not EMPTY_COLUMNS:
+        columns = [c for c in columnOrder if c!='']
+
     with open(fn,"w", newline='') as f:
         csvwriter = csv.writer(f, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csvwriter.writerow(columnOrder)
         for res in filename2results.values():
-            row=[res[c] for c in columnOrder]
+            row=[res.get(c,"") for c in columns]
             csvwriter.writerow(row)
     print("saved to:", fn)
 
