@@ -147,7 +147,7 @@ def DownloadPages(toDownload, printInfos=True, nice=NICENESS):
                 printInfo ("=failed, trying next:", end=" ")
             else:
                 if page.status_code==200:
-                    printInfo ("succeeded, break.", end = " ")
+                    printInfo ("=succeeded, break.", end = " ")
                     print("..", end=""); sys.stdout.flush()
                     time.sleep(NICENESS)
                     print(".", end=" ")
