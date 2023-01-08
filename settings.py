@@ -54,6 +54,8 @@ REMOVE_SENTENCES=[
                     " and 1 more",
                     ': 20 Year Celebration',
                     ' GAME OF THE YEAR EDITION',
+                    '®: The Musketeer',
+                    '®'
                     ]
 
 # these could not be automatically transformed, so provide the URL path manually:
@@ -88,7 +90,8 @@ NAMES_MAPPER = {"Encased": "encased-a-sci-fi-post-apocalyptic-rpg",
                 'STAR WARS™ Battlefront™ II: Celebration Editio...' : 'star-wars-battlefront-ii',
                 'Rocket League®' : 'rocket-league',
                 'Redout: Enhanced Edition' : 'redout-2016',
-
+                'RollerCoaster Tycoon® 3: Complete Edition' : 'rollercoaster-tycoon-3',
+                'The Drone Racing League®' : 'the-drone-racing-league-simulator'
                 }
 
 # these are not on metacritic (yet)
