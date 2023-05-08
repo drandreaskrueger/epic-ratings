@@ -53,7 +53,7 @@ def parseUserscore(soup, urlpath, resultsDict):
     # print (us.prettify())
     userscoreTags = us.select("div[class^=metascore_w\ user\ large\ game]") # begins with operator
     if len(userscoreTags) !=1: # protect against a case that shouldn't happen anyway 
-        raise Error("number of userscore tags not equal 1")
+        raise Error("number of userscore tags not equal 1")#this threw undefined for me might want to look into it
     userscoreText = userscoreTags[0].text.strip()
     resultsDict["userscore"] = 0 if userscoreText=="tbd" else float(userscoreText)
 
@@ -144,20 +144,49 @@ def parseMetacriticFiles(filenames, downloadsFolder):
 
 
 def compileGenres(filename2results):
+    import csv
+
+def compileGenres(filename2results):
     """
-    Had hoped to sort by single genre, but ~75 genres are a bit much.
-    Idea for a TODO: Group these 75 genres into 7-10 genregroups, then
-    create new table with 7-10 genregroups as titles, and Y/N columns.
+    Condense the list of 75 genres into 10 genregroups and return the counts of movies
+    belonging to each genregroup as a new column in a new CSV file.
     """
-    allGenres=[]
-    for fn,r in filename2results.items():
-        genres = r["genres"].split(",")
-        allGenres.extend(genres)
-        # if "" in genres: print(fn) # these have unnecessary , in Genre(s)
-    allGenres = sorted(list(set(allGenres))) # make unique
-    if "" in allGenres:
-        allGenres.remove("") # remove the empty genre
-    return allGenres
+    # Define the 10 genregroups and the genres that belong to each group
+    genregroups = {
+        "Action": ["Action", "Fighting", "Shooter", "Beat-'Em-Up", "Shoot-'Em-Up"],
+        "Adventure": ["Adventure", "Metroidvania", "Open-World", "Platformer", "Point-and-Click"],
+        "RPG": ["RPG", "ActionRPG", "PC-styleRPG"],
+        "Simulation": ["Simulation", "CityBuilding", "Business/Tycoon", "Vehicle", "Train"],
+        "Sports": ["Sports", "Basketball", "Soccer"],
+        "Strategy": ["Strategy", "Tactical", "Tactics", "Real-Time", "Turn-Based"],
+        "Casual": ["Puzzle", "Matching", "Pinball"],
+        "Horror": ["Horror"],
+        "MassivelyMultiplayer": ["MassivelyMultiplayer", "MassivelyMultiplayerOnline"],
+        "Miscellaneous": ["Miscellaneous"]
+    }
+    
+    # Initialize the genregroup counts to 0
+    genregroup_counts = {genregroup: 0 for genregroup in genregroups}
+    
+    # Count the number of movies in each genregroup
+    for fn, r in filename2results.items():
+        for genre in r["genres"].split(","):
+            genre = genre.strip()
+            for genregroup, genres in genregroups.items():
+                if genre in genres:
+                    genregroup_counts[genregroup] += 1
+                    break
+    
+    # Write the genregroup counts as a new column in a new CSV file
+    with open("output.csv", "w", newline="") as csvfile:
+        fieldnames = list(filename2results.values())[0].keys()
+        fieldnames.append("Genregroup Counts")
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for fn, r in filename2results.items():
+            r["Genregroup Counts"] = ",".join(str(genregroup_counts[genregroup]) for genregroup in genregroups)
+            writer.writerow(r)
+
 
 
 def saveResults(filename2results, filename="MyEpicGamesOnMetacritic-%s.csv",
